@@ -49,12 +49,14 @@ class ProductTitleWidget extends StatelessWidget {
                 children: [
                   IconButton(
                       onPressed: () {
-                        homeBloc.add(HomeProductWishlistButtonClickedEvent());
+                        homeBloc.add(HomeProductWishlistButtonClickedEvent(
+                            clickedProducts: productDataModel));
                       },
                       icon: Icon(Icons.favorite_outline)),
                   IconButton(
                       onPressed: () {
-                        homeBloc.add(HomeProductCartButtonClickedEvent());
+                        homeBloc.add(HomeProductCartButtonClickedEvent(
+                            clickedProducts: productDataModel));
                       },
                       icon: Icon(Icons.shopping_bag_outlined))
                 ],

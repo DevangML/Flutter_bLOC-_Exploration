@@ -1,0 +1,9 @@
+{
+  "dart.flutterSdkPath": "/Users/devang/fvm/default/bin",
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  }
+}
